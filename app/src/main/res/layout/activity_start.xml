@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/hangman_complete">
+
+    <TextView
+        android:text="How long should your word be at least?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionText"
+        android:layout_marginBottom="25dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_above="@+id/wordlengthInput"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/okButton"
+        android:layout_alignBaseline="@+id/wordlengthInput"
+        android:layout_alignBottom="@+id/wordlengthInput"
+        android:layout_alignRight="@+id/questionText"
+        android:layout_alignEnd="@+id/questionText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:id="@+id/wordlengthInput"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:text="1"
+        android:background="@drawable/edittext_lines"
+        android:layout_marginBottom="37dp"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="Play Offline     "
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/checkBox"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edittext_lines"
+        android:textColorLink="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/questionText"
+        android:layout_alignStart="@+id/questionText" />
+
+    <CheckBox
+        android:text="Sound   "
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sound"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edittext_lines"
+        android:textColorLink="@android:color/white"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_toRightOf="@+id/checkBox"
+        android:layout_toEndOf="@+id/checkBox"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:text="Difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficultyButton"
+        android:textSize="11sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edittext_lines"
+        android:layout_alignBaseline="@+id/sound"
+        android:layout_alignBottom="@+id/sound"
+        android:layout_toRightOf="@+id/sound"
+        android:layout_toEndOf="@+id/sound"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+</RelativeLayout>

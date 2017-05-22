@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string-array name="difficulty">
+        <item name="simple"></item>
+        <item name="medium"></item>
+        <item nama="difficult"></item>
+    </string-array>
+
+</resources>
